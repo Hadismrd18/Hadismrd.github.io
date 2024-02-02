@@ -107,6 +107,11 @@
   #header-input:checked ~ .navigation {
     top: 0;
   }
+  #header-input:checked + .header-label {
+    top: 30px;
+    right: 40px;
+    position: fixed;
+  }
   #header-input:checked + .header-label::after {
     width: 5rem;
     border-radius: 6rem;
@@ -142,6 +147,7 @@
     margin-left: 2rem;
   }
   .image {
+    object-fit: contain;
     width: 30%;
     margin: 0 10rem;
   }
@@ -177,7 +183,7 @@
     // max-width: 50%;
     color: $secondary-background;
   }
-  .description{
+  .description {
     max-width: 50%;
     margin-right: 10%;
   }
@@ -188,4 +194,48 @@
     object-fit: contain;
     width: 40%;
   }
+}
+.main-container-3 {
+  background-color: $secondary-background;
+  border-radius: 0 120px 0 120px;
+  @include base-spacing-styles();
+  margin-top: 10rem;
+  min-height: 80vh;
+  h3 {
+    margin-top: 7rem;
+    text-align: center;
+    font-size: 5rem;
+    color: $primary-background;
+  }
+  .skill-container {
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .skill {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+  }
+  .skill-text{
+    font-size: 3rem;
+    color: $primary-text;
+  }
+  .skill-1 > h4 {
+    margin-right: 20px;
+  }
+  .skill-2 > h4 {
+    margin-right: 9px;
+  }
+   .skill-1,  .skill-2{
+    margin-bottom: 12rem;
+   }
+  .skill .colored-line::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 350px;
+    background-color: $primary-background;
+  }
+  // when the page scrolled to tis part fill the empty lines
 }

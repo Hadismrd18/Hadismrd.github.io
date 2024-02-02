@@ -119,6 +119,11 @@ html {
   #header-input:checked ~ .navigation {
     top: 0;
   }
+  #header-input:checked + .header-label {
+    top: 30px;
+    right: 40px;
+    position: fixed;
+  }
   #header-input:checked + .header-label::after {
     width: 5rem;
     border-radius: 6rem;
@@ -156,6 +161,8 @@ html {
   margin-left: 2rem;
 }
 .main-container-1 .image {
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 30%;
   margin: 0 10rem;
 }
@@ -204,4 +211,49 @@ html {
   -o-object-fit: contain;
      object-fit: contain;
   width: 40%;
+}
+
+.main-container-3 {
+  background-color: rgb(126, 133, 125);
+  border-radius: 0 120px 0 120px;
+  padding: 16px 40px;
+  max-width: 100%;
+  margin-top: 10rem;
+  min-height: 80vh;
+}
+.main-container-3 h3 {
+  margin-top: 7rem;
+  text-align: center;
+  font-size: 5rem;
+  color: rgb(235, 232, 225);
+}
+.main-container-3 .skill-container {
+  margin-top: 7rem;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+.main-container-3 .skill {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+.main-container-3 .skill-text {
+  font-size: 3rem;
+  color: rgb(59, 72, 69);
+}
+.main-container-3 .skill-1 > h4 {
+  margin-right: 20px;
+}
+.main-container-3 .skill-2 > h4 {
+  margin-right: 9px;
+}
+.main-container-3 .skill-1, .main-container-3 .skill-2 {
+  margin-bottom: 12rem;
+}
+.main-container-3 .skill .colored-line::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 350px;
+  background-color: rgb(235, 232, 225);
 }
