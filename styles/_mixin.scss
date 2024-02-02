@@ -1,0 +1,4 @@
+@mixin base-spacing-styles(){
+    padding: $spacer * 4  $spacer * 10;
+    max-width: 100%;
+}

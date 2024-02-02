@@ -1,0 +1,207 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Oswald";
+}
+
+html {
+  font-size: 8px;
+}
+
+.body-container {
+  background-color: rgb(235, 232, 225);
+}
+
+.header-container {
+  background-color: rgb(126, 133, 125);
+  padding: 16px 40px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+.header-container h1 {
+  font-size: 4rem;
+  color: rgb(59, 72, 69);
+}
+.header-container .items-lst {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.header-container .navigation li {
+  list-style-type: none;
+}
+.header-container .navigation a {
+  text-decoration: none;
+  color: rgb(59, 72, 69);
+  font-size: 3rem;
+}
+.header-container .navigation a:hover {
+  color: rgb(235, 232, 225);
+  font-size: 3.5rem;
+  transition: 0.3s ease-in;
+}
+.header-container .header-label {
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.header-container .header-label::after,
+.header-container .header-label::before,
+.header-container .menu-dot {
+  display: block;
+  background-color: rgb(168, 91, 88);
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  position: relative;
+  padding-bottom: 1px;
+}
+.header-container .header-label::after,
+.header-container .header-label::before {
+  content: "";
+}
+.header-container .header-label::before {
+  top: 0;
+}
+.header-container .menu-dot {
+  top: calc(50% - 22px);
+}
+.header-container .header-label::after {
+  bottom: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .header-container .header-input,
+  .js-click-container,
+  .header-container .header-label {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-container .header-input {
+    opacity: 0;
+  }
+  .header-container .header-label {
+    z-index: 2;
+  }
+  .header-container h1 {
+    margin-right: auto;
+    z-index: 2;
+  }
+  .navigation {
+    background-color: rgb(126, 133, 125);
+    position: fixed;
+    top: -700px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 6rem 0 3rem 0;
+    transition: top 0.3s ease-in-out;
+    box-shadow: 0px 5px 18px -8px rgba(52, 72, 59, 0.75);
+    -webkit-box-shadow: 0px 5px 18px -8px rgba(52, 72, 59, 0.75);
+    -moz-box-shadow: 0px 5px 18px -8px rgba(52, 72, 59, 0.75);
+  }
+  .header-container .items-lst {
+    display: block;
+  }
+  #header-input:checked ~ .navigation {
+    top: 0;
+  }
+  #header-input:checked + .header-label::after {
+    width: 5rem;
+    border-radius: 6rem;
+    transition: width 0.2s ease-in;
+  }
+  #header-input:checked + .header-label::before {
+    width: 5rem;
+    transition: width 0.2s ease-in;
+    border-radius: 6rem;
+  }
+  #header-input:checked + .header-label .menu-dot {
+    width: 5rem;
+    transition: width 0.2s ease-in;
+    border-radius: 6rem;
+  }
+}
+.main-container-1 {
+  padding: 16px 40px;
+  max-width: 100%;
+  background-color: rgb(126, 133, 125);
+  min-height: 80vh;
+  border-radius: 0 0 50% 0;
+  display: flex;
+}
+.main-container-1 .text-section {
+  margin-top: 5rem;
+}
+.main-container-1 .text-section h2 {
+  font-size: 6rem;
+  font-weight: 700;
+  color: rgb(59, 72, 69);
+}
+.main-container-1 .btn {
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+.main-container-1 .image {
+  width: 30%;
+  margin: 0 10rem;
+}
+
+.btn {
+  width: 10rem;
+  height: 5rem;
+  background-color: rgb(198, 153, 137);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: rgb(168, 91, 88);
+  border-radius: 0.5rem;
+  border: 2px solid rgb(168, 91, 88);
+}
+
+.btn:hover {
+  background-color: rgb(168, 91, 88);
+  color: rgb(198, 153, 137);
+  transition: 0.3s ease-in-out;
+}
+
+.main-container-2 {
+  padding: 16px 40px;
+  max-width: 100%;
+  display: flex;
+}
+.main-container-2 h3 {
+  margin: 4rem 0;
+  font-size: 5rem;
+  color: rgb(168, 91, 88);
+}
+.main-container-2 p {
+  font-size: 2rem;
+  color: rgb(126, 133, 125);
+}
+.main-container-2 .description {
+  max-width: 50%;
+  margin-right: 10%;
+}
+.main-container-2 .about-btn {
+  margin-top: 2rem;
+}
+.main-container-2 .desc-img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 40%;
+}
