@@ -15,7 +15,7 @@ html {
 }
 
 .body-container {
-  background-color: rgb(235, 232, 225);
+  background-color: #ebe8e1;
 }
 
 .header-container {
@@ -45,7 +45,7 @@ html {
   font-size: 3rem;
 }
 .header-container .navigation a:hover {
-  color: rgb(235, 232, 225);
+  color: #ebe8e1;
   font-size: 3.5rem;
   transition: 0.3s ease-in;
 }
@@ -59,7 +59,7 @@ html {
 .header-container .header-label::before,
 .header-container .menu-dot {
   display: block;
-  background-color: rgb(168, 91, 88);
+  background-color: #a85b58;
   border-radius: 50%;
   width: 12px;
   height: 12px;
@@ -175,13 +175,13 @@ html {
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  color: rgb(168, 91, 88);
+  color: #a85b58;
   border-radius: 0.5rem;
-  border: 2px solid rgb(168, 91, 88);
+  border: 2px solid #a85b58;
 }
 
 .btn:hover {
-  background-color: rgb(168, 91, 88);
+  background-color: #a85b58;
   color: rgb(198, 153, 137);
   transition: 0.3s ease-in-out;
 }
@@ -194,7 +194,7 @@ html {
 .main-container-2 h3 {
   margin: 4rem 0;
   font-size: 5rem;
-  color: rgb(168, 91, 88);
+  color: #a85b58;
 }
 .main-container-2 p {
   font-size: 2rem;
@@ -214,9 +214,10 @@ html {
 }
 
 .main-container-3 {
+  padding: 16px 40px;
+  max-width: 100%;
   background-color: rgb(126, 133, 125);
   border-radius: 0 120px 0 120px;
-  padding: 2rem 0;
   margin-top: 10rem;
   min-height: 80vh;
   max-width: 100%;
@@ -225,57 +226,29 @@ html {
   margin-top: 7rem;
   text-align: center;
   font-size: 5rem;
-  color: rgb(235, 232, 225);
+  color: #ebe8e1;
 }
 .main-container-3 .skill-container {
   margin-top: 7rem;
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  grid-template-rows: repeat(4, 4fr);
-}
-.main-container-3 .skill-1 {
-  grid-row: 1/2;
-}
-.main-container-3 .skill-2 {
-  grid-row: 2/3;
-  grid-column: 2/3;
-}
-.main-container-3 .skill-3 {
-  grid-row: 3/4;
-}
-.main-container-3 .skill-4 {
-  grid-row: 4/5;
-  grid-column: 2/3;
+  display: flex;
+  justify-content: space-around;
 }
 .main-container-3 .skill {
   display: flex;
   align-items: center;
-  border: 2px solid rgb(59, 72, 69);
-  min-height: 8rem;
-  padding: 0 2rem;
+  justify-content: center;
+  gap: 3rem;
 }
-.main-container-3 .skill-right {
-  padding-left: 12rem;
-  border-radius: 4rem 0 0 4rem;
-}
-.main-container-3 .skill-left {
-  padding-right: 12rem;
-  border-radius: 0 4rem 4rem 0;
+.main-container-3 .skill-1,
+.main-container-3 .skill-2 {
+  margin-bottom: 10rem;
 }
 .main-container-3 .skill-text {
   font-size: 3rem;
   color: rgb(59, 72, 69);
 }
-.main-container-3 .skill > h4 {
-  margin-right: 20px;
-}
-.main-container-3 .skill-2 > h4 {
-  margin-right: 9px;
-}
-.main-container-3 .skill .colored-line::after {
-  content: "";
-  display: block;
+.main-container-3 .white-line {
   height: 4px;
-  width: 350px;
-  background-color: rgb(235, 232, 225);
+  width: 300px;
+  background-color: #ebe8e1;
 }

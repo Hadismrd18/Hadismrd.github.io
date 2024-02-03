@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Final Project</title>
   </head>
   <body class="body-container">
@@ -71,28 +75,41 @@
         <h3>Skills</h3>
         <div class="skill-container">
           <!-- you can add a relevant icon by eachone -->
-          <div class="skill-left skill skill-1">
-            <h4 class="skill-text">html</h4>
-            <div class="colored-line"></div>
-            <p class="skill-text">80%</p>
+          <div class="skill-left">
+            <div class=" animate__animated animate__backInLeft skill skill-1">
+              <h4 class="skill-text">html</h4>
+              <div class="white-line"></div>
+              <div class="colored-line"></div>
+              <p class="skill-text">80%</p>
+            </div>
+            <div class=" animate__animated animate__backInLeft skill animate__delay-1s skill-3">
+              <h4 class="skill-text">java script</h4>
+              <div class="white-line"></div>
+              <div class="colored-line"></div>
+              <p class="skill-text">30%</p>
+            </div>
           </div>
-          <div class=" skill-right skill skill-2">
-            <h4 class="skill-text">css</h4>
-            <div class="colored-line"></div>
-            <p class="skill-text">80%</p>
-          </div>
-          <div class=" skill-left skill skill-3">
-            <h4 class="skill-text">java script</h4>
-            <div class="colored-line"></div>
-            <p class="skill-text">30%</p>
-          </div>
-          <div class="skill-right skill skill-4">
-            <h4 class="skill-text">React</h4>
-            <div class="colored-line"></div>
-            <p class="skill-text">10%</p>
+          <div class="skill-right">
+            <div class="skill skill-2">
+              <h4 class="skill-text">css</h4>
+              <div class="white-line"></div>
+              <div class="colored-line"></div>
+              <p class="skill-text">80%</p>
+            </div>
+
+            <div class="skill skill-4">
+              <h4 class="skill-text">React</h4>
+              <div class="white-line"></div>
+              <div class="colored-line"></div>
+              <p class="skill-text">10%</p>
+            </div>
           </div>
         </div>
       </section>
     </main>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
