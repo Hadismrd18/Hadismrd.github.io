@@ -252,3 +252,21 @@ html {
   width: 300px;
   background-color: #ebe8e1;
 }
+
+@keyframes blobanimation {
+  0% {
+    border-radius: 55% 50% 70% 60%/55% 50% 50% 45%;
+  }
+  25% {
+    border-radius: 45% 50% 60% 30%/45% 45% 65% 30%;
+  }
+  50% {
+    border-radius: 55% 30% 50% 60%/45% 50% 45% 50%;
+  }
+  75% {
+    border-radius: 45% 30% 45% 50%/45% 30% 50% 50%;
+  }
+  100% {
+    border-radius: 55% 50% 70% 60%/55% 50% 50% 45%;
+  }
+}
