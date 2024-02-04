@@ -12,10 +12,11 @@ html, body {
 
 html {
   font-size: 8px;
+  scroll-behavior: smooth;
 }
 
 .body-container {
-  background-color: #ebe8e1;
+  background-color: rgb(235, 232, 225);
 }
 
 .header-container {
@@ -43,9 +44,10 @@ html {
   text-decoration: none;
   color: rgb(59, 72, 69);
   font-size: 3rem;
+  display: inline-block;
 }
 .header-container .navigation a:hover {
-  color: #ebe8e1;
+  color: rgb(235, 232, 225);
   font-size: 3.5rem;
   transition: 0.3s ease-in;
 }
@@ -226,7 +228,7 @@ html {
   margin-top: 7rem;
   text-align: center;
   font-size: 5rem;
-  color: #ebe8e1;
+  color: rgb(235, 232, 225);
 }
 .main-container-3 .skill-container {
   margin-top: 7rem;
@@ -237,7 +239,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 .main-container-3 .skill-1,
 .main-container-3 .skill-2 {
@@ -247,10 +249,17 @@ html {
   font-size: 3rem;
   color: rgb(59, 72, 69);
 }
+.main-container-3 .skill-icon {
+  font-size: 3.5rem;
+}
+.main-container-3 .skill-icon:hover {
+  color: #a85b58 !important;
+  transition: 0.3s;
+}
 .main-container-3 .white-line {
   height: 4px;
   width: 300px;
-  background-color: #ebe8e1;
+  background-color: rgb(235, 232, 225);
 }
 
 @keyframes blobanimation {
@@ -269,4 +278,54 @@ html {
   100% {
     border-radius: 55% 50% 70% 60%/55% 50% 50% 45%;
   }
+}
+.main-container-4 {
+  padding: 16px 40px;
+  max-width: 100%;
+  height: 80vh;
+  width: 90%;
+  background-color: rgb(59, 72, 69);
+  border-radius: 2rem;
+  margin: 10rem 5% 0;
+}
+.main-container-4 h3 {
+  text-align: center;
+  font-size: 4rem;
+}
+.main-container-4 h3,
+.main-container-4 h4,
+.main-container-4 p {
+  color: rgb(235, 232, 225);
+}
+.main-container-4 .experience-contianer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+.main-container-4 .EXP {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 50%;
+  border: 2px solid rgb(126, 133, 125);
+}
+.main-container-4 h4 {
+  font-size: 2.5rem;
+}
+.main-container-4 p {
+  font-size: 2rem;
+}
+.main-container-4 .exp-icon {
+  font-size: 8rem;
+}
+.main-container-4 .EXP:hover {
+  border-color: rgb(235, 232, 225);
+  transition: 0.5s;
+}
+.main-container-4 .EXP:hover > .exp-icon {
+  color: rgb(126, 133, 125) !important;
+  transition: 0.5s;
 }
