@@ -421,7 +421,26 @@ html {
   opacity: 1;
   transition: 0.3s ease-in-out;
 }
-.main-container-5 .blur-cont > h4, .main-container-5 .blur-cont > p {
+.main-container-5 .blur-cont > h4,
+.main-container-5 .blur-cont > p {
   color: #a85b58;
+  font-size: 2rem;
+}
+
+.main-container-6 {
+  padding: 16px 40px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 80vh;
+}
+.main-container-6 .review-fig {
+  display: flex;
+  gap: 2rem;
+  border: 1px solid rgb(59, 72, 69);
+  padding: 1rem 2.5rem;
+}
+.main-container-6 .review-cap > h5 {
   font-size: 2rem;
 }

@@ -427,8 +427,33 @@
     opacity: 1;
     transition: 0.3s ease-in-out;
   }
-  .blur-cont >h4, .blur-cont > p{
+  .blur-cont > h4,
+  .blur-cont > p {
     color: $secondary-text;
+    font-size: 2rem;
+  }
+}
+.main-container-6 {
+  @include base-spacing-styles();
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height:80vh;
+  .review-contianer {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // min-height: 90%;
+    // border: 1px solid black;
+  }
+  .review-fig{
+    display: flex;
+    gap: 2rem;
+    border: 1px solid $primary-text;
+    padding: 1rem 2.5rem;
+    // justify-content: space-around;
+  }
+  .review-cap > h5{
     font-size: 2rem;
   }
 }
