@@ -10,7 +10,8 @@
   align-items: center;
   flex-grow: 1;
   h1 {
-    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    font-size: 2.5rem;
     color: $primary-text;
   }
   .items-lst {
@@ -135,6 +136,9 @@
   min-height: 80vh;
   border-radius: 0 0 50% 0;
   display: flex;
+  .main-cont1-link{
+    text-decoration: none;
+  }
   .text-section {
     margin-top: 5rem;
   }
@@ -289,10 +293,10 @@
 .main-container-4 {
   @include base-spacing-styles();
   height: 80vh;
-  width: 90%;
+  width: 95%;
   background-color: $primary-text;
   border-radius: 2rem;
-  margin: 10rem calc(5%) 0;
+  margin: 5rem calc(2.5%) 0;
   h3 {
     font-size: 4rem;
   }
@@ -431,7 +435,7 @@
   .fig-link {
     font-size: 2.5rem;
   }
-  .fig-link-cont{
+  .fig-link-cont {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -497,5 +501,69 @@
   .review-icon {
     display: inline-block;
     font-size: 3rem;
+  }
+}
+.footer-container {
+  @include base-spacing-styles();
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 50vh;
+  background-color: $primary-text;
+  border-radius: 10rem 10rem 0 0;
+  .contact-container {
+    h4 {
+      font-size: 5rem;
+      color: $secondary-text;
+      margin-bottom: 2rem;
+      border-bottom: 4px double $secondary-text;
+    }
+    .footer-input {
+      display: block;
+      margin-bottom: 4rem;
+      background-color: transparent;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-color: $secondary-text;
+      padding: 1rem 5rem 1rem 0;
+    }
+    .footer-input:focus {
+      outline: none;
+    }
+    .footer-input::placeholder {
+      font-size: 2.5rem;
+      color: $third-text;
+      padding-left: 2rem;
+    }
+    .footer-btn {
+      display: block;
+      background-color: $third-text;
+      border-radius: 0.5rem;
+      border-color: $secondary-text;
+      color: $secondary-text;
+      width: 10rem;
+      height: 4rem;
+      margin-left: 2rem;
+    }
+  }
+  .social-media-container{
+    margin-right: 20rem;
+    h5{
+      font-size: 6rem;
+      letter-spacing: 1rem;
+      color: $primary-background;
+      border-bottom: 1px solid $primary-background;
+      margin-bottom: 3rem;
+    }
+    .footer-icon-cont{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .social-icon{
+      font-size: 2.3rem;
+      color: $secondary-background;
+    }
   }
 }
