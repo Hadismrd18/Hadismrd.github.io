@@ -402,13 +402,17 @@
   .pr-link > figure {
     width: 100%;
     height: 100%;
-    border: 3px solid $primary-text;
+    // border: 3px solid $primary-text;
 
     > .grid-img {
       width: 100%;
       height: 100%;
-      // object-fit: cover;
+      transition: all 0.3s;
     }
+  }
+  .fig:hover > .grid-img {
+    width: 100%;
+    transform: scale(1.1);
   }
   .blur-cont {
     width: 100%;
@@ -420,8 +424,22 @@
     background-color: rgba(0, 0, 0, 0.16);
     opacity: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .fig-link {
+    font-size: 2.5rem;
+  }
+  .fig-link-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(198, 153, 137, 0.56);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid $secondary-text;
   }
   .blur-cont:hover {
     opacity: 1;
@@ -437,23 +455,47 @@
   @include base-spacing-styles();
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  min-height:80vh;
+  justify-content: space-between;
+  min-height: 80vh;
   .review-contianer {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // min-height: 90%;
-    // border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
   }
-  .review-fig{
+  .review-fig {
     display: flex;
     gap: 2rem;
     border: 1px solid $primary-text;
     padding: 1rem 2.5rem;
+    width: 60%;
+    height: 120px;
+    justify-content: space-between;
     // justify-content: space-around;
   }
-  .review-cap > h5{
+  .review-fig-img {
+    width: 100px;
+
+    border-radius: 50%;
+  }
+  .review-cap > h5 {
     font-size: 2rem;
+  }
+  .review-cap > p {
+    margin-top: 2.5rem;
+  }
+  .review-cap > h5,
+  .review-cap > p {
+    color: $primary-text;
+  }
+  .review-txt > h4 {
+    margin-right: 10rem;
+    text-align: center;
+    font-size: 10rem;
+    color: $secondary-text;
+  }
+  .review-icon {
+    display: inline-block;
+    font-size: 3rem;
   }
 }

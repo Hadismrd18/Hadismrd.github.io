@@ -61,7 +61,7 @@ html {
 .header-container .header-label::before,
 .header-container .menu-dot {
   display: block;
-  background-color: #a85b58;
+  background-color: rgb(168, 91, 88);
   border-radius: 50%;
   width: 12px;
   height: 12px;
@@ -177,13 +177,13 @@ html {
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  color: #a85b58;
+  color: rgb(168, 91, 88);
   border-radius: 0.5rem;
-  border: 2px solid #a85b58;
+  border: 2px solid rgb(168, 91, 88);
 }
 
 .btn:hover {
-  background-color: #a85b58;
+  background-color: rgb(168, 91, 88);
   color: rgb(198, 153, 137);
   transition: 0.3s ease-in-out;
 }
@@ -214,7 +214,7 @@ html {
 .main-container-2 h3 {
   margin: 4rem 0;
   font-size: 5rem;
-  color: #a85b58;
+  color: rgb(168, 91, 88);
 }
 .main-container-2 p {
   font-size: 2rem;
@@ -231,7 +231,7 @@ html {
   -o-object-fit: contain;
      object-fit: contain;
   width: 35%;
-  border: 5px solid #a85b58;
+  border: 5px solid rgb(168, 91, 88);
   animation: blobanimation 6s infinite ease-in-out;
 }
 
@@ -273,7 +273,7 @@ html {
   font-size: 3.5rem;
 }
 .main-container-3 .skill-icon:hover {
-  color: #a85b58 !important;
+  color: rgb(168, 91, 88) !important;
   transition: 0.3s;
 }
 .main-container-3 .white-line {
@@ -398,11 +398,15 @@ html {
 .main-container-5 .pr-link > figure {
   width: 100%;
   height: 100%;
-  border: 3px solid rgb(59, 72, 69);
 }
 .main-container-5 .pr-link > figure > .grid-img {
   width: 100%;
   height: 100%;
+  transition: all 0.3s;
+}
+.main-container-5 .fig:hover > .grid-img {
+  width: 100%;
+  transform: scale(1.1);
 }
 .main-container-5 .blur-cont {
   width: 100%;
@@ -414,8 +418,22 @@ html {
   background-color: rgba(0, 0, 0, 0.16);
   opacity: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.main-container-5 .fig-link {
+  font-size: 2.5rem;
+}
+.main-container-5 .fig-link-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(198, 153, 137, 0.56);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(168, 91, 88);
 }
 .main-container-5 .blur-cont:hover {
   opacity: 1;
@@ -423,7 +441,7 @@ html {
 }
 .main-container-5 .blur-cont > h4,
 .main-container-5 .blur-cont > p {
-  color: #a85b58;
+  color: rgb(168, 91, 88);
   font-size: 2rem;
 }
 
@@ -432,15 +450,45 @@ html {
   max-width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   min-height: 80vh;
+}
+.main-container-6 .review-contianer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
 }
 .main-container-6 .review-fig {
   display: flex;
   gap: 2rem;
   border: 1px solid rgb(59, 72, 69);
   padding: 1rem 2.5rem;
+  width: 60%;
+  height: 120px;
+  justify-content: space-between;
+}
+.main-container-6 .review-fig-img {
+  width: 100px;
+  border-radius: 50%;
 }
 .main-container-6 .review-cap > h5 {
   font-size: 2rem;
+}
+.main-container-6 .review-cap > p {
+  margin-top: 2.5rem;
+}
+.main-container-6 .review-cap > h5,
+.main-container-6 .review-cap > p {
+  color: rgb(59, 72, 69);
+}
+.main-container-6 .review-txt > h4 {
+  margin-right: 10rem;
+  text-align: center;
+  font-size: 10rem;
+  color: rgb(168, 91, 88);
+}
+.main-container-6 .review-icon {
+  display: inline-block;
+  font-size: 3rem;
 }
