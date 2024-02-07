@@ -52,6 +52,9 @@ html {
   font-size: 3.5rem;
   transition: 0.3s ease-in;
 }
+.header-container .navigation {
+  max-width: 768px;
+}
 .header-container .header-label {
   height: 44px;
   display: flex;
@@ -246,7 +249,6 @@ html {
   border-radius: 0 120px 0 120px;
   margin-top: 10rem;
   min-height: 80vh;
-  max-width: 100%;
 }
 .main-container-3 h3 {
   margin-top: 7rem;
@@ -280,16 +282,20 @@ html {
   color: rgb(168, 91, 88) !important;
   transition: 0.3s;
 }
+.main-container-3 .skill-right,
+.main-container-3 .skill-left {
+  width: 40%;
+}
 .main-container-3 .white-line {
   height: 4px;
-  width: 300px;
+  width: 100%;
   background-color: rgb(235, 232, 225);
 }
 
 .main-container-4 {
   padding: 16px 40px;
   max-width: 100%;
-  height: 80vh;
+  height: 90vh;
   width: 95%;
   background-color: rgb(59, 72, 69);
   border-radius: 2rem;
@@ -297,6 +303,7 @@ html {
 }
 .main-container-4 h3 {
   font-size: 4rem;
+  margin-bottom: 10rem;
 }
 .main-container-4 h3,
 .main-container-4 h4,
@@ -308,19 +315,25 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 100%;
+}
+.main-container-4 .top-exp,
+.main-container-4 .bottom-exp {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  width: 100%;
 }
 .main-container-4 .EXP {
-  width: 20%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 50%;
+  height: 200px;
   border: 2px solid rgb(126, 133, 125);
 }
 .main-container-4 h4 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .main-container-4 p {
   font-size: 2.5rem;
@@ -470,10 +483,10 @@ html {
   padding: 1rem 2.5rem;
   width: 60%;
   height: 120px;
-  justify-content: space-between;
 }
 .main-container-6 .review-fig-img {
   width: 100px;
+  margin-right: 10%;
   border-radius: 50%;
 }
 .main-container-6 .review-cap > h5 {
@@ -564,4 +577,133 @@ html {
 .footer-container .social-media-container .social-icon {
   font-size: 2.3rem;
   color: rgb(126, 133, 125);
+}
+
+@media screen and (min-width: 2500px) {
+  .header-container .navigation a,
+  .header-container h1 {
+    font-size: 5.5rem;
+  }
+  .main-container-1 .text-section h2 {
+    font-size: 12rem;
+  }
+  .btn {
+    width: 20rem;
+    height: 10rem;
+    font-size: 4rem;
+  }
+  .main-container-2 h3 {
+    font-size: 10rem;
+  }
+  .main-container-2 p {
+    font-size: 3.5rem;
+  }
+  .main-container-3 {
+    min-height: 65vh;
+  }
+  .main-container-3 h3 {
+    font-size: 10rem;
+  }
+  .main-container-3 .white-line {
+    width: 600px;
+    height: 6px;
+  }
+  .main-container-3 .skill-1,
+  .main-container-3 .skill-2 {
+    margin-bottom: 20rem;
+  }
+  .main-container-3 .skill-icon,
+  .main-container-3 .skill-text {
+    font-size: 6rem;
+  }
+  .main-container-4 h3 {
+    font-size: 8rem;
+    margin-top: 8rem;
+  }
+  .main-container-4 h4,
+  .main-container-4 p {
+    font-size: 6rem;
+  }
+  .main-container-5 h3 {
+    font-size: 12rem;
+    margin-bottom: 8rem;
+  }
+  .main-container-5 .grid-contianer {
+    grid-template-rows: repeat(5, 200px);
+  }
+  .main-container-6 .review-txt > h4 {
+    font-size: 20rem;
+  }
+  .main-container-6 .review-fig {
+    width: 70%;
+    min-height: 180px;
+  }
+  .main-container-6 .review-fig-img {
+    width: 150px;
+  }
+  .main-container-6 .review-cap > h5 {
+    font-size: 5rem;
+  }
+  .main-container-6 .review-cap > p {
+    font-size: 3.5rem;
+  }
+  .main-container-6 .review-icon {
+    font-size: 4rem;
+  }
+  .footer-container .contact-container h4 {
+    font-size: 12rem;
+    margin-bottom: 10rem;
+  }
+  .footer-container .contact-container .footer-input {
+    margin-bottom: 8rem;
+    width: 50rem;
+    padding: 5rem 5rem 1rem 0;
+  }
+  .footer-container .contact-container .footer-input::-moz-placeholder {
+    font-size: 5rem;
+  }
+  .footer-container .contact-container .footer-input::placeholder {
+    font-size: 5rem;
+  }
+  .footer-container .contact-container .footer-btn {
+    width: 20rem;
+    height: 8rem;
+    font-size: 4rem;
+  }
+  .footer-container .social-media-container h5 {
+    font-size: 12rem;
+  }
+  .footer-container .social-media-container .social-icon {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 995px) {
+  .main-container-6 .review-fig {
+    width: 80%;
+  }
+  .main-container-6 .review-cap > h5 {
+    font-size: 2rem;
+  }
+  .main-container-6 .star-icon {
+    font-size: 1.5rem;
+  }
+  .main-container-6 p {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 950px) {
+  .main-container-4 h3 {
+    margin-bottom: 5rem;
+  }
+  .main-container-4 .experience-contianer {
+    display: block;
+  }
+  .main-container-4 .top-exp {
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 595px) {
+  .main-container-4 .top-exp, .main-container-4 .bottom-exp {
+    display: block;
+  }
 }
