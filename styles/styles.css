@@ -348,7 +348,7 @@ html {
 }
 
 .main-container-5 {
-  margin-top: 15rem;
+  margin-top: 10rem;
 }
 .main-container-5 h4 {
   font-size: 8rem;
@@ -438,6 +438,9 @@ html {
 .main-container-5 .nav-dot:hover {
   background-color: rgb(59, 72, 69);
   transition: 0.2s ease-in;
+}
+.main-container-5 .change-icon {
+  font-size: 5rem;
 }
 
 .main-container-6 {

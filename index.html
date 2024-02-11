@@ -121,7 +121,10 @@
             <div
               class="wow animate__animated animate__backInRight animate__delay-1s skill skill-4"
             >
-              <i class="skill-icon fa-brands fa-bootstrap" style="color: #c69989"></i>
+              <i
+                class="skill-icon fa-brands fa-bootstrap"
+                style="color: #c69989"
+              ></i>
               <h4 class="skill-text">bootstrap</h4>
               <div class="white-line"></div>
               <div class="colored-line"></div>
@@ -133,9 +136,10 @@
       <section id="main-cont-4" class="container main-container-4">
         <h3 class="wow animate__animated animate__backInUp">Experience</h3>
 
-        <div class="experience-contianer">
+        <div id="experience-contianer" class="experience-contianer">
           <div class="top-exp">
             <div
+              id="EXP-1"
               class="wow animate__animated animate__backInDown EXP experience-item-1"
             >
               <i
@@ -143,9 +147,10 @@
                 style="color: #ebe8e1"
               ></i>
               <h4>Number of Projects</h4>
-              <p>+300</p>
+              <p class="exp-count" id="exp1">300</p>
             </div>
             <div
+              id="EXP-2"
               class="wow animate__animated animate__backInDown EXP experience-item-2"
             >
               <i
@@ -153,11 +158,12 @@
                 style="color: #ebe8e1"
               ></i>
               <h4>Happy clients</h4>
-              <p>+53</p>
+              <p class="exp-count" id="exp2">0</p>
             </div>
           </div>
           <div class="bottom-exp">
             <div
+              id="EXP-3"
               class="wow animate__animated animate__backInDown EXP experience-item-3"
             >
               <i
@@ -165,9 +171,10 @@
                 style="color: #ebe8e1"
               ></i>
               <h4>awards won</h4>
-              <p>+7</p>
+              <p class="exp-count" id="exp3">0</p>
             </div>
             <div
+              id="EXP-4"
               class="wow animate__animated animate__backInDown EXP experience-item--4"
             >
               <i
@@ -175,173 +182,71 @@
                 style="color: #ebe8e1"
               ></i>
               <h4>years of experience</h4>
-              <p>3</p>
+              <p class="exp-count" id="exp4">0</p>
             </div>
           </div>
         </div>
       </section>
       <section id="main-cont-5" class="container main-container-5">
         <h4>Projects</h4>
-        <div class="project-container">
-          <figure class="figure-1 figure-container">
-            <img class="fig-img" src="assets/1.jpg" />
+        <div id="project-container" class="project-container">
+          <i id="left-click"
+            class="change-icon fa-solid fa-caret-left"
+            style="color: #7e857d"
+          ></i>
+          <figure id="fig-1" class="figure-1 figure-container">
+            <img id="fig-img-1" class="fig-img" src="assets/project-1.jpg" />
             <figcaption class="blur-cont">
-              <h5>slider</h5>
-              <a href="#" class="link-cont">
+              <h5 id="header-1">slider</h5>
+              <a id="href-1" href="https://github.com/Hadismrd18/menu-project" class="link-cont">
                 <i class="fig-link fa-solid fa-link" style="color: #a85b58"></i
               ></a>
             </figcaption>
           </figure>
-          <figure class="figure-2 figure-container">
-            <img class="fig-img" src="assets/1.jpg" />
+          <figure id="fig-2"  class="figure-2 figure-container">
+            <img id="fig-img-2" class="fig-img" src="assets/1.jpg" />
             <figcaption class="blur-cont">
-              <h5>menu</h5>
-              <a href="#" class="link-cont">
+              <h5 id="header-2">menu</h5>
+              <a id="href-2" href="https://github.com/Hadismrd18/menu-project" class="link-cont">
                 <i class="fig-link fa-solid fa-link" style="color: #a85b58"></i
               ></a>
             </figcaption>
           </figure>
-          <figure class="figure-3 figure-container">
-            <img class="fig-img" src="assets/1.jpg" />
+          <figure id="fig-3" class="figure-3 figure-container">
+            <img id="fig-img-3" class="fig-img" src="assets/project-2.jpg" />
             <figcaption class="blur-cont">
-              <h5>to-do-list</h5>
-              <a href="#" class="link-cont">
+              <h5 id="header-3">to-do-list</h5>
+              <a id="href-3" href="https://github.com/Hadismrd18/menu-project" class="link-cont">
                 <i class="fig-link fa-solid fa-link" style="color: #a85b58"></i
               ></a>
             </figcaption>
           </figure>
+          <i id="right-click"
+            class="change-icon fa-solid fa-caret-right"
+            style="color: #7e857d"
+          ></i>
         </div>
         <div class="project-nav">
+          <div id="nav-left" class="nav-dot"></div>
           <div class="nav-dot"></div>
-          <div class="nav-dot"></div>
-          <div class="nav-dot"></div>
+          <div id="nav-right" class="nav-dot"></div>
         </div>
       </section>
-      <!-- <section id="main-cont-5" class="main-container-5">
-        <h3>Projects</h3>
-        <div class="project-container">
-          <div class="grid-contianer">
-
-            
-              <figure class="fig fig-1">
-                <img class="grid-img img-1" src="assets/0.jpg" />
-                <figcaption class="blur-cont">
-                  <h4>project 1</h4>
-                  <a href="#" class="fig-link-cont">
-                    <i
-                      class="fig-link fa-solid fa-link"
-                      style="color: #a85b58"
-                    ></i>
-                  </a>
-                </figcaption>
-              </figure>
-            
-            <!-- <a class="link-1 pr-link">
-              <figure class="fig">
-                <img class="grid-img img-1" src="assets/0.jpg" />
-                <figcaption class="blur-cont">
-                  <h4>project 1</h4>
-                  <a href="#" class="fig-link-cont">
-                    <i
-                      class="fig-link fa-solid fa-link"
-                      style="color: #a85b58"
-                    ></i>
-                  </a>
-                </figcaption>
-              </figure>
-            </a> -->
-
-      <!-- 
-              <figure class="fig fig-2">
-                <img class="grid-img img-2" src="assets/grid-2.jpg" />
-                <figcaption class="blur-cont">
-                  <h4>project 2</h4>
-                  <a href="#" class="fig-link-cont">
-                    <i
-                      class="fig-link fa-solid fa-link"
-                      style="color: #a85b58"
-                    ></i>
-                  </a>
-                </figcaption>
-              </figure>
-        
-
-            
-              <figure class="fig fig-3">
-                <img class="grid-img img-3" src="assets/grid-1.jpg" />
-                <figcaption class="blur-cont">
-                  <h4>project 3</h4>
-                  <a href="#" class="fig-link-cont">
-                    <i
-                      class="fig-link fa-solid fa-link"
-                      style="color: #a85b58"
-                    ></i>
-                  </a>
-                </figcaption>
-              </figure>
-    
-
-   
-              <figure class="fig fig-4">
-                <img class="grid-img img-4" src="assets/grid-4.jpg" />
-                <figcaption class="blur-cont">
-                  <h4>project 6</h4>
-                  <a href="#" class="fig-link-cont">
-                    <i
-                      class="fig-link fa-solid fa-link"
-                      style="color: #a85b58"
-                    ></i>
-                  </a>
-                </figcaption>
-              </figure>
-       
-              <figure class="fig fig-5">
-                <img class="grid-img img-5" src="assets/grid-3.jpg" />
-                <figcaption class="blur-cont">
-                  <h4>project 5</h4>
-                  <a href="#" class="fig-link-cont">
-                    <i
-                      class="fig-link fa-solid fa-link"
-                      style="color: #a85b58"
-                    ></i>
-                  </a>
-                </figcaption>
-              </figure>
-              <figure class="fig fig-6">
-                <img class="grid-img img-6" src="assets/1.jpg " />
-                <figcaption class="blur-cont">
-                  <h4>project 4</h4>
-                  <a href="#" class="fig-link-cont">
-                    <i
-                      class="fig-link fa-solid fa-link"
-                      style="color: #a85b58"
-                    ></i>
-                  </a>
-                </figcaption>
-              </figure>
-
-          </div>
-          <div class="click-container">
-            <div class="pic-cont"></div>
-            <a class="click-btn" href="#">Click for more info</a>
-          </div>
-        </div>
-      </section> -->
       <section id=" main-cont-6" class="container main-container-6">
         <div class="review-txt">
           <h4>Reviews</h4>
           <img class="review-img" src="assets/leafpic.png" />
         </div>
         <div class="review-contianer">
-          <i
+          <i id="up-click"
             class="review-icon fa-solid fa-caret-up"
             style="color: #7e857d"
           ></i>
           <figure class="review-fig">
-            <img class="review-fig-img" src="assets/person.jpg" />
+            <img id="review-img" class="review-fig-img" src="assets/person-2.jpg" />
             <figcaption class="review-cap">
-              <h5>name</h5>
-              <div>
+              <h5 id="review-name">name</h5>
+              <div id="review-star">
                 <i
                   class="star-icon review-icon fa-solid fa-star"
                   style="color: #c69989"
@@ -363,17 +268,17 @@
                   style="color: #c69989"
                 ></i>
               </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p id="review-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </figcaption>
           </figure>
-          <i
+          <i id="down-click"
             class="review-icon fa-solid fa-sort-down"
             style="color: #7e857d"
           ></i>
         </div>
       </section>
     </main>
-    <footer id=" footer-cont" class="container footer-container">
+    <footer id="footer-cont" class="container footer-container">
       <div class="contact-container">
         <h4>Contact</h4>
         <input type="text" class="footer-input" placeholder="Name" />
@@ -392,6 +297,7 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();
