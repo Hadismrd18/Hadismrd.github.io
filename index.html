@@ -21,7 +21,7 @@
     <title>Final Project</title>
   </head>
   <body class="body-container">
-    <header class="header-container">
+    <header id="scroll-to-beginning" class="header-container">
       <h1 class="logo">my portfolio</h1>
       <input type="checkbox" class="header-input" id="header-input" />
       <label for="header-input" class="header-label">
@@ -52,37 +52,44 @@
           >
         </div>
       </section>
+
       <section id="main-cont-2" class="container main-container-2">
-        <div class="description">
-          <h3>ABOUT</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            suscipit aliquid ratione est in magni veniam eos provident et,
-            aspernatur perferendis ipsa nobis officiis totam esse porro tempora
-            dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reiciendis suscipit aliquid ratione est in magni veniam eos
-            provident et, aspernatur perferendis ipsa nobis officiis totam esse
-            porro tempora dolores. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Reiciendis suscipit aliquid ratione est in magni
-            veniam eos provident et, aspernatur perferendis ipsa nobis officiis
-            totam esse porro tempora dolores. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Reiciendis suscipit aliquid ratione
-            est in magni veniam eos provident et, aspernatur perferendis ipsa
-            nobis officiis totam esse porro tempora dolores. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Reiciendis suscipit aliquid
-            ratione est in magni veniam eos provident et, aspernatur perferendis
-            ipsa nobis officiis totam esse porro tempora
-          </p>
-          <div class="about-btn btn">READ MORE</div>
+        <a href="#scroll-to-beginning" class="floating-buton"
+          ><div class="icon-cont">
+            <i class="up-icon fa-solid fa-chevron-up"></i></div
+        ></a>
+        <div class="text-and-img">
+          <div class="description">
+            <h3>ABOUT</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis suscipit aliquid ratione est in magni veniam eos
+              provident et, aspernatur perferendis ipsa nobis officiis totam
+              esse porro tempora dolores. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Reiciendis suscipit aliquid ratione est in magni
+              veniam eos provident et, aspernatur perferendis ipsa nobis
+              officiis totam esse porro tempora dolores. Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Reiciendis suscipit aliquid
+              ratione est in magni veniam eos provident et, aspernatur
+              perferendis ipsa nobis officiis totam esse porro tempora dolores.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis suscipit aliquid ratione est in magni veniam eos
+              provident et, aspernatur perferendis ipsa nobis officiis totam
+              esse porro tempora dolores. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Reiciendis suscipit aliquid ratione est in magni
+              veniam eos provident et, aspernatur perferendis ipsa nobis
+              officiis totam esse porro tempora
+            </p>
+            <div class="about-btn btn">READ MORE</div>
+          </div>
+          <!-- <div class="img-cont"> -->
+          <img class="desc-img image" src="assets/1.jpg" alt="computer" />
         </div>
-        <!-- <div class="img-cont"> -->
-        <img class="desc-img image" src="assets/1.jpg" alt="computer" />
         <!-- </div> -->
       </section>
       <section id="main-cont-3" class="container main-container-3">
         <h3>Skills</h3>
         <div class="skill-container">
-          <!-- you can add a relevant icon by eachone -->
           <div class="skill-left">
             <div
               class="wow animate__animated animate__backInLeft skill skill-1"
@@ -92,8 +99,10 @@
                 style="color: #c69989"
               ></i>
               <h4 class="skill-text">html</h4>
-              <div class="white-line"></div>
-              <div class="colored-line"></div>
+              <div class="white-line">
+                <div class="color-1 colored-line"></div>
+              </div>
+
               <p class="skill-text">80%</p>
             </div>
             <div
@@ -101,8 +110,10 @@
             >
               <i class="skill-icon fa-brands fa-js" style="color: #c69989"></i>
               <h4 class="skill-text">java script</h4>
-              <div class="white-line"></div>
-              <div class="colored-line"></div>
+              <div class="white-line">
+                <div class="color-3 colored-line"></div>
+              </div>
+
               <p class="skill-text">30%</p>
             </div>
           </div>
@@ -113,8 +124,10 @@
                 style="color: #c69989"
               ></i>
               <h4 class="skill-text">css</h4>
-              <div class="white-line"></div>
-              <div class="colored-line"></div>
+              <div class="white-line">
+                <div class="color-2 colored-line"></div>
+              </div>
+
               <p class="skill-text">80%</p>
             </div>
 
@@ -126,8 +139,10 @@
                 style="color: #c69989"
               ></i>
               <h4 class="skill-text">bootstrap</h4>
-              <div class="white-line"></div>
-              <div class="colored-line"></div>
+              <div class="white-line">
+                <div class="color-4 colored-line"></div>
+              </div>
+
               <p class="skill-text">70%</p>
             </div>
           </div>
@@ -147,7 +162,7 @@
                 style="color: #ebe8e1"
               ></i>
               <h4>Number of Projects</h4>
-              <p class="exp-count" id="exp1">300</p>
+              <p class="exp-count" id="exp1">0</p>
             </div>
             <div
               id="EXP-2"
@@ -190,7 +205,8 @@
       <section id="main-cont-5" class="container main-container-5">
         <h4>Projects</h4>
         <div id="project-container" class="project-container">
-          <i id="left-click"
+          <i
+            id="left-click"
             class="change-icon fa-solid fa-caret-left"
             style="color: #7e857d"
           ></i>
@@ -198,16 +214,24 @@
             <img id="fig-img-1" class="fig-img" src="assets/project-1.jpg" />
             <figcaption class="blur-cont">
               <h5 id="header-1">slider</h5>
-              <a id="href-1" href="https://github.com/Hadismrd18/menu-project" class="link-cont">
+              <a
+                id="href-1"
+                href="https://github.com/Hadismrd18/menu-project"
+                class="link-cont"
+              >
                 <i class="fig-link fa-solid fa-link" style="color: #a85b58"></i
               ></a>
             </figcaption>
           </figure>
-          <figure id="fig-2"  class="figure-2 figure-container">
+          <figure id="fig-2" class="figure-2 figure-container">
             <img id="fig-img-2" class="fig-img" src="assets/1.jpg" />
             <figcaption class="blur-cont">
               <h5 id="header-2">menu</h5>
-              <a id="href-2" href="https://github.com/Hadismrd18/menu-project" class="link-cont">
+              <a
+                id="href-2"
+                href="https://github.com/Hadismrd18/menu-project"
+                class="link-cont"
+              >
                 <i class="fig-link fa-solid fa-link" style="color: #a85b58"></i
               ></a>
             </figcaption>
@@ -216,12 +240,17 @@
             <img id="fig-img-3" class="fig-img" src="assets/project-2.jpg" />
             <figcaption class="blur-cont">
               <h5 id="header-3">to-do-list</h5>
-              <a id="href-3" href="https://github.com/Hadismrd18/menu-project" class="link-cont">
+              <a
+                id="href-3"
+                href="https://github.com/Hadismrd18/menu-project"
+                class="link-cont"
+              >
                 <i class="fig-link fa-solid fa-link" style="color: #a85b58"></i
               ></a>
             </figcaption>
           </figure>
-          <i id="right-click"
+          <i
+            id="right-click"
             class="change-icon fa-solid fa-caret-right"
             style="color: #7e857d"
           ></i>
@@ -238,12 +267,17 @@
           <img class="review-img" src="assets/leafpic.png" />
         </div>
         <div class="review-contianer">
-          <i id="up-click"
+          <i
+            id="up-click"
             class="review-icon fa-solid fa-caret-up"
             style="color: #7e857d"
           ></i>
           <figure class="review-fig">
-            <img id="review-img" class="review-fig-img" src="assets/person-2.jpg" />
+            <img
+              id="review-img"
+              class="review-fig-img"
+              src="assets/person-2.jpg"
+            />
             <figcaption class="review-cap">
               <h5 id="review-name">name</h5>
               <div id="review-star">
@@ -268,10 +302,13 @@
                   style="color: #c69989"
                 ></i>
               </div>
-              <p id="review-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p id="review-txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
             </figcaption>
           </figure>
-          <i id="down-click"
+          <i
+            id="down-click"
             class="review-icon fa-solid fa-sort-down"
             style="color: #7e857d"
           ></i>
@@ -290,9 +327,13 @@
       <div class="social-media-container">
         <h5>My social Meida</h5>
         <div class="footer-icon-cont">
-          <a href="#"> <i class="social-icon fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="social-icon fa-brands fa-facebook"></i></a>
           <a href="#"> <i class="social-icon fa-brands fa-instagram"></i></a>
-          <a href="#"> <i class="social-icon fa-brands fa-linkedin"></i></a>
+          <a
+            href="www.linkedin.com/in/HadisMomeni"
+          >
+            <i class="social-icon fa-brands fa-linkedin"></i
+          ></a>
           <a href="#"> <i class="social-icon fa-brands fa-twitter"></i></a>
         </div>
       </div>

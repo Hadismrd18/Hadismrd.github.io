@@ -1,15 +1,38 @@
-const experience_1 = document.getElementById("exp1");
-
-let counter = 0;
-document.addEventListener("DOMContentLoaded", function () {
-  setInterval(function () {
-    if (counter <= Number(experience_1.textContent)) {
-      document.getElementById("exp1").textContent = counter;
-      counter++;
-    }
-  }, 500);
+let counter1 = 0;
+let counter2 = 0;
+let counter3 = 0;
+let counter4 = 0;
+window.addEventListener("scroll", function () {
+  const scrolled = window.scrollY;
+  console.log(scrolled);
+  if ( scrolled >= 1300) {
+    console.log("done");
+    setInterval(() => {
+      if (counter1 <= 300) {
+        document.getElementById("exp1").textContent = counter1;
+        counter1++;
+      }
+    }, 100);
+    setInterval(() => {
+      if (counter2 <= 53) {
+        document.getElementById("exp2").textContent = counter2;
+        counter2++;
+      }
+    }, 700);
+    setInterval(() => {
+      if (counter3 <= 7) {
+        document.getElementById("exp3").textContent = counter3;
+        counter3++;
+      }
+    }, 800);
+    setInterval(() => {
+      if (counter4 <= 3) {
+        document.getElementById("exp4").textContent = counter4;
+        counter4++;
+      }
+    }, 1000);
+  }
 });
-
 
 const projectList = [
   [

@@ -199,24 +199,11 @@ html {
   transition: 0.3s ease-in-out;
 }
 
-@keyframes blobanimation {
-  0% {
-    border-radius: 55% 50% 70% 60%/55% 50% 50% 45%;
-  }
-  25% {
-    border-radius: 45% 50% 60% 30%/45% 45% 65% 30%;
-  }
-  50% {
-    border-radius: 55% 30% 50% 60%/45% 50% 45% 50%;
-  }
-  75% {
-    border-radius: 45% 30% 45% 50%/45% 30% 50% 50%;
-  }
-  100% {
-    border-radius: 55% 50% 70% 60%/55% 50% 50% 45%;
-  }
-}
 .main-container-2 {
+  position: relative;
+}
+.main-container-2 .text-and-img {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -241,6 +228,29 @@ html {
   -o-object-fit: contain;
      object-fit: contain;
   width: 40%;
+}
+.main-container-2 .icon-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.main-container-2 .up-icon {
+  color: rgb(59, 72, 69);
+}
+.main-container-2 .floating-buton {
+  text-decoration: none;
+  font-size: 4rem;
+  display: block;
+  border-radius: 0.5rem;
+  border: 2px solid rgb(59, 72, 69);
+  width: 6rem;
+  height: 6rem;
+  background-color: rgb(126, 133, 125);
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
 }
 
 .main-container-3 {
@@ -289,6 +299,23 @@ html {
   height: 4px;
   width: 100%;
   background-color: rgb(235, 232, 225);
+  overflow-x: hidden;
+}
+.main-container-3 .colored-line {
+  height: 100%;
+  background-color: rgb(168, 91, 88);
+}
+.main-container-3 .color-1 {
+  width: 80%;
+}
+.main-container-3 .color-2 {
+  width: 80%;
+}
+.main-container-3 .color-3 {
+  width: 30%;
+}
+.main-container-3 .color-4 {
+  width: 70%;
 }
 
 .main-container-4 {
@@ -442,6 +469,10 @@ html {
 .main-container-5 .change-icon {
   font-size: 5rem;
 }
+.main-container-5 .change-icon:hover {
+  color: rgb(59, 72, 69) !important;
+  transition: 0.3s;
+}
 
 .main-container-6 {
   display: flex;
@@ -491,6 +522,10 @@ html {
 .main-container-6 .review-icon {
   display: inline-block;
   font-size: 3rem;
+}
+.main-container-6 .review-icon:hover {
+  color: rgb(59, 72, 69) !important;
+  transition: 0.3s;
 }
 
 .footer-container {
@@ -803,6 +838,10 @@ html {
 @media screen and (max-width: 650px) {
   .main-container-1 .image {
     width: 60%;
+    margin: 2rem 0 0 0;
+  }
+  .main-container-1 .btn {
+    margin-top: 1rem;
   }
   .main-container-5 h4 {
     font-size: 6rem;
@@ -894,6 +933,9 @@ html {
   }
 }
 @media screen and (max-width: 305px) {
+  .main-container-5 .change-icon {
+    font-size: 2rem;
+  }
   .main-container-6 .review-cap > h5 {
     font-size: 1.3rem;
   }
@@ -906,6 +948,13 @@ html {
   }
 }
 @media screen and (max-width: 260px) {
+  .main-container-5 .figure-2 {
+    width: 2rem;
+  }
+  .main-container-5 .figure-1,
+  .main-container-5 .figure-3 {
+    width: 1rem;
+  }
   .main-container-6 .review-fig-img {
     width: 5rem;
   }
