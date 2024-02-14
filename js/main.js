@@ -4,9 +4,7 @@ let counter3 = 0;
 let counter4 = 0;
 window.addEventListener("scroll", function () {
   const scrolled = window.scrollY;
-  console.log(scrolled);
   if ( scrolled >= 1300) {
-    console.log("done");
     setInterval(() => {
       if (counter1 <= 751) {
         document.getElementById("exp1").textContent = counter1;
