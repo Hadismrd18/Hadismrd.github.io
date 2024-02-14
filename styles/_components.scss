@@ -133,7 +133,6 @@
   @include base-spacing-styles();
 }
 .main-container-1 {
-  // @include base-spacing-styles();
   background-color: $secondary-background;
   min-height: 80vh;
   border-radius: 0 0 50% 0;
@@ -287,7 +286,6 @@
   }
 }
 .main-container-4 {
-  // @include base-spacing-styles();
   height: 70vh;
   width: 95%;
   background-color: $primary-text;
@@ -444,7 +442,6 @@
   }
 }
 .main-container-6 {
-  // @include base-spacing-styles();
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -500,7 +497,6 @@
   }
 }
 .footer-container {
-  // @include base-spacing-styles();
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -698,8 +694,6 @@
 }
 @media screen and (max-width: 995px) {
   .main-container-1 {
-    .text-section h2 {
-    }
     .image {
       margin: 2rem 5rem 0;
       width: 45%;
@@ -856,7 +850,7 @@
       width: 60%;
       margin: 2rem 0 0 0;
     }
-    .btn{
+    .btn {
       margin-top: 1rem;
     }
   }
@@ -952,8 +946,12 @@
       font-size: 2rem;
     }
     .nav-dot {
-      font-size: 0.5rem;
+      width: 0.5rem;
+      height: 0.5rem;
     }
+  }
+  .main-container-5 .change-icon {
+    font-size: 2rem;
   }
   .main-container-6 {
     .review-fig-img {
@@ -975,8 +973,8 @@
 }
 @media screen and (max-width: 305px) {
   .main-container-5 {
-    .change-icon {
-      font-size: 2rem;
+    .project-container {
+      gap: 2rem;
     }
   }
   .main-container-6 {
@@ -994,12 +992,12 @@
 }
 @media screen and (max-width: 260px) {
   .main-container-5 {
-    .figure-2 {
-      width: 2rem;
+    .change-icon {
+      font-size: 1rem;
     }
-    .figure-1,
-    .figure-3 {
-      width: 1rem;
+    .nav-dot {
+      width: 0.25rem;
+      height: 0.25rem;
     }
   }
   .main-container-6 {

@@ -914,7 +914,11 @@ html {
     font-size: 2rem;
   }
   .main-container-5 .nav-dot {
-    font-size: 0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  .main-container-5 .change-icon {
+    font-size: 2rem;
   }
   .main-container-6 .review-fig-img {
     width: 70px;
@@ -933,8 +937,8 @@ html {
   }
 }
 @media screen and (max-width: 305px) {
-  .main-container-5 .change-icon {
-    font-size: 2rem;
+  .main-container-5 .project-container {
+    gap: 2rem;
   }
   .main-container-6 .review-cap > h5 {
     font-size: 1.3rem;
@@ -948,12 +952,12 @@ html {
   }
 }
 @media screen and (max-width: 260px) {
-  .main-container-5 .figure-2 {
-    width: 2rem;
+  .main-container-5 .change-icon {
+    font-size: 1rem;
   }
-  .main-container-5 .figure-1,
-  .main-container-5 .figure-3 {
-    width: 1rem;
+  .main-container-5 .nav-dot {
+    width: 0.25rem;
+    height: 0.25rem;
   }
   .main-container-6 .review-fig-img {
     width: 5rem;

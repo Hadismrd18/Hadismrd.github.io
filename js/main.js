@@ -8,25 +8,25 @@ window.addEventListener("scroll", function () {
   if ( scrolled >= 1300) {
     console.log("done");
     setInterval(() => {
-      if (counter1 <= 300) {
+      if (counter1 <= 751) {
         document.getElementById("exp1").textContent = counter1;
         counter1++;
       }
-    }, 100);
+    }, 15);
     setInterval(() => {
-      if (counter2 <= 53) {
+      if (counter2 <= 114) {
         document.getElementById("exp2").textContent = counter2;
         counter2++;
       }
-    }, 700);
+    }, 100);
     setInterval(() => {
-      if (counter3 <= 7) {
+      if (counter3 <= 15) {
         document.getElementById("exp3").textContent = counter3;
         counter3++;
       }
     }, 800);
     setInterval(() => {
-      if (counter4 <= 3) {
+      if (counter4 <= 5) {
         document.getElementById("exp4").textContent = counter4;
         counter4++;
       }
