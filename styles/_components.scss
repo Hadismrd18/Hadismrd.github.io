@@ -1,10 +1,11 @@
 .body-container {
   background-color: $primary-background;
 }
+
 .header-container {
   background-color: $secondary-background;
   @include base-spacing-styles();
-
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,6 +67,24 @@
   .header-label::after {
     bottom: 0;
   }
+  .blur-section {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.163);
+    height: 70vh;
+    width: 100vw;
+    bottom: 600px;
+    right: 0;
+    left: 0;
+  }
+}
+.new-blur-class {
+  bottom: 600px !important;
+}
+.new-navigation-class {
+  top: -700px !important;
+}
+.new-label-class {
+  opacity: 0;
 }
 
 @media screen and (min-width: 769px) {
@@ -81,6 +100,9 @@
   }
   .header-container .header-label {
     z-index: 11;
+    position: fixed;
+    top: 30px;
+    right: 40px;
   }
   .header-container h1 {
     margin-right: auto;
@@ -107,6 +129,12 @@
   }
   #header-input:checked ~ .navigation {
     top: 0;
+  }
+  #header-input:checked ~ .blur-section {
+    bottom: -50px;
+    transition: bottom 0.3s ease-in;
+    position: fixed;
+    z-index: 2;
   }
   #header-input:checked + .header-label {
     top: 30px;
@@ -991,6 +1019,18 @@
   }
 }
 @media screen and (max-width: 260px) {
+  .header-container {
+    .header-label {
+      top: 10px;
+      right: 20px;
+    }
+    #header-input:checked + .header-label {
+      top: 10px;
+      right: 20px;
+      position: fixed;
+    }
+  }
+
   .main-container-5 {
     .change-icon {
       font-size: 1rem;

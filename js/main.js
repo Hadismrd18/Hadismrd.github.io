@@ -4,7 +4,7 @@ let counter3 = 0;
 let counter4 = 0;
 window.addEventListener("scroll", function () {
   const scrolled = window.scrollY;
-  if ( scrolled >= 1300) {
+  if (scrolled >= 1300) {
     setInterval(() => {
       if (counter1 <= 751) {
         document.getElementById("exp1").textContent = counter1;
@@ -30,8 +30,15 @@ window.addEventListener("scroll", function () {
       }
     }, 1000);
   }
+  if (scrolled <= 100) {
+    document.getElementById("label-id").classList.remove("new-label-class");
+  }
+  document.getElementById("blur-section").addEventListener("click",function(){
+    if (scrolled || scrolled > 0) {
+      document.getElementById("label-id").classList.add("new-label-class");
+    }
+  })
 });
-
 const projectList = [
   [
     "assets/project-1.jpg",
@@ -152,4 +159,18 @@ document.getElementById("up-click").addEventListener("click", function () {
   let removedElement = reviewList.shift();
   reviewList.push(removedElement);
   changeReviewOrder();
+});
+document.getElementById("blur-section").addEventListener("click", function () {
+  document.getElementById("blur-section").classList.add("new-blur-class");
+  document
+    .getElementById("navigation-section")
+    .classList.add("new-navigation-class");
+  document.getElementById("header-input").checked = false;
+});
+document.getElementById("header-input").addEventListener("click", function () {
+  document.getElementById("blur-section").classList.remove("new-blur-class");
+  document
+    .getElementById("navigation-section")
+    .classList.remove("new-navigation-class");
+  document.getElementById("label-id").classList.remove("new-label-class");
 });
