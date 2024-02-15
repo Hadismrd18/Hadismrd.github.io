@@ -112,7 +112,7 @@ const reviewList = [
   [
     "assets/person-2.jpg",
     "name-2",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. fsdkfalsddsfdsgvdfb lkfvdfkv kdsna  aksd k fs",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. fsdkfalsddsfdsgvdfb lkfvdfk",
     `<i
     class="star-icon review-icon fa-solid fa-star"
     style="color: #c69989"
