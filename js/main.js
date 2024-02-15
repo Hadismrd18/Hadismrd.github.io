@@ -30,14 +30,6 @@ window.addEventListener("scroll", function () {
       }
     }, 1000);
   }
-  if (scrolled <= 100) {
-    document.getElementById("label-id").classList.remove("new-label-class");
-  }
-  document.getElementById("blur-section").addEventListener("click",function(){
-    if (scrolled || scrolled > 0) {
-      document.getElementById("label-id").classList.add("new-label-class");
-    }
-  })
 });
 const projectList = [
   [
@@ -172,5 +164,4 @@ document.getElementById("header-input").addEventListener("click", function () {
   document
     .getElementById("navigation-section")
     .classList.remove("new-navigation-class");
-  document.getElementById("label-id").classList.remove("new-label-class");
 });
